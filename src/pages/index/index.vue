@@ -11,13 +11,16 @@
       </swiper-item>
     </swiper>
     <Classify></Classify>
+    <Goods></Goods>
   </div>
 </template>
 <script>
 import Classify from './classify/classify'
+import Goods from './goods/goods'
 export default {
   components: {
-    Classify
+    Classify,
+    Goods
   },
   data() {
     return {

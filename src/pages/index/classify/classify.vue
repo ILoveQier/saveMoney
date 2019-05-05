@@ -16,7 +16,7 @@
       </div>
       <div v-else
            class="classify-items">
-        <span>全部分类</span>
+        <span class="all-word">全部分类</span>
       </div>
       <div class="classify-img"
            :class="{rotate:isRotate}"
@@ -27,7 +27,8 @@
     <div class="all-classify"
          @click="isRotate=false"
          :class="{grow:isRotate}">
-      <div class="classify-details" @click.stop>
+      <div class="classify-details"
+           @click.stop>
         <span v-for="(item,i) in classfies"
               @click.stop="currentIndex=i"
               :class="{choose:currentIndex === i}"
@@ -64,6 +65,7 @@ export default {
   display: flex;
   flex-direction: column;
   font-size: 28rpx;
+  position: relative;
   .scroll-wrap {
     width: 100%;
     height: 100rpx;
@@ -84,6 +86,9 @@ export default {
         margin: 0 10rpx;
         box-sizing: border-box;
         border-bottom: 10rpx solid transparent;
+        &.all-word {
+          font-size: 30rpx;
+        }
       }
       .isChoose {
         border-bottom: 10rpx solid rgb(197, 25, 146);
@@ -110,6 +115,9 @@ export default {
     width: 100%;
     height: 0;
     overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 100rpx;
     background-color: rgba(95, 88, 88, 0.562);
     transition: 0.5s all;
     &.grow {
