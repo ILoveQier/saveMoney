@@ -26,6 +26,7 @@
     </div>
     <div class="all-classify"
          @click="isRotate=false"
+           catchtouchmove="preventdefault"
          :class="{grow:isRotate}">
       <div class="classify-details"
            @click.stop>
@@ -59,16 +60,19 @@ export default {
   }
 }
 </script>
-<style lang="less">
+<style lang="less" scoped>
 .classify-container {
   width: 100%;
+  height: 100rpx;
   display: flex;
   flex-direction: column;
   font-size: 28rpx;
   position: relative;
+  padding-bottom: 20rpx;
+  box-sizing: border-box;
   .scroll-wrap {
     width: 100%;
-    height: 100rpx;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-shrink: 0;
@@ -80,6 +84,7 @@ export default {
       white-space: nowrap;
       overflow: hidden;
       box-sizing: border-box;
+
       span {
         display: inline-block;
         height: 80rpx;
@@ -143,6 +148,11 @@ export default {
       }
     }
   }
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
 }
 </style>
 

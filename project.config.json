@@ -9,7 +9,7 @@
 	},
 	"miniprogramRoot": "dist/wx/",
 	"compileType": "miniprogram",
-	"appid": "wx7fec29754ee12072",
+	"appid": "wx54bfb36a416af56e",
 	"projectname": "save-box",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},

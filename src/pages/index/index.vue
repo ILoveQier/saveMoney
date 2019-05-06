@@ -42,9 +42,9 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
   .swiper-wrap {
     width: 100%;
+    margin-bottom: 20rpx;
     swiper-item {
       display: flex;
       justify-content: center;
