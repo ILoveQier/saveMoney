@@ -3,5 +3,7 @@
 </script>
 
 <style>
-
+body,html {
+  height: 100%;
+}
 </style>

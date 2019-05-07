@@ -1,6 +1,8 @@
 {
   "pages": [
-    "pages/index/main"
+    "pages/index/main",
+    "pages/withdraw/main",
+    "pages/withdraw/details/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
