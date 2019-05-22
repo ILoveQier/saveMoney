@@ -1,21 +1,21 @@
 <template>
   <div class="index-container">
-      <swiper class="swiper-wrap"
-              :indicator-dots="indicator"
-              autoplay='true'
-              indicator-active-color='#fff'>
-        <swiper-item v-for="item in imgUrls"
-                     :key="item">
-          <img :src="item"
-               class="slide-image" />
-        </swiper-item>
-      </swiper>
-      <Classify :navFixed='scrollTop>200'></Classify>
-      <Goods></Goods>
-      <div class="save-btn"
-           @click="goSave">
-        储钱罐
-      </div>
+    <swiper class="swiper-wrap"
+            :indicator-dots="indicator"
+            autoplay='true'
+            indicator-active-color='#fff'>
+      <swiper-item v-for="item in imgUrls"
+                   :key="item">
+        <img :src="item"
+             class="slide-image" />
+      </swiper-item>
+    </swiper>
+    <Classify :navFixed='scrollTop>200'></Classify>
+    <Goods></Goods>
+    <div class="save-btn"
+         @click="goSave">
+      储钱罐
+    </div>
   </div>
 </template>
 <script>
@@ -32,13 +32,12 @@ export default {
         url: '../../pages/withdraw/main',
       });
     },
-
   },
   data() {
     return {
       imgUrls: [],
       indicator: false,
-      scrollTop:0
+      scrollTop: 0
     }
   },
   onPageScroll(e) {
@@ -55,10 +54,6 @@ export default {
 <style lang="less">
 .index-container {
   height: 100%;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // overflow: hidden;
   .swiper-wrap {
     width: 100%;
     margin-bottom: 20rpx;

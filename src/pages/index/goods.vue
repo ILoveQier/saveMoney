@@ -25,16 +25,12 @@ export default {
       isLoading: false
     }
   },
-  methods: {
-
-  },
   onReachBottom() {
     this.isLoading = true
     setTimeout(() => {
       this.goodlist.push(1)
       this.isLoading = false
     }, 1000);
-
   }
 }
 </script> 
