@@ -44,7 +44,8 @@ export default {
     this.scrollTop = parseInt(e.scrollTop)
   },
   onLoad() {
-    this.imgUrls = ['/static/images/0.jpg', '/static/images/1.jpg', '/static/images/2.jpg', '/static/images/3.jpg', '/static/images/4.jpg', '/static/images/5.jpg']
+    this.imgUrls  = ['/static/images/0.jpg']
+    // this.imgUrls = ['/static/images/0.jpg', '/static/images/1.jpg', '/static/images/2.jpg', '/static/images/3.jpg', '/static/images/4.jpg', '/static/images/5.jpg']
     if (this.imgUrls.length !== 1) {
       this.indicator = true
     }
